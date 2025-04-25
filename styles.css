@@ -13,9 +13,9 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  h2 {
+  h1 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     color: #333;
   }
   
@@ -34,7 +34,6 @@ body {
   
   label {
     margin-bottom: 6px;
-    font-weight: bold;
   }
   
   input, select, textarea {
@@ -49,7 +48,7 @@ body {
   
   button {
     padding: 10px 25px;
-    background-color: #4CAF50;
+    background-color: #04a50a;
     color: white;
     border: none;
     border-radius: 6px;
@@ -58,7 +57,7 @@ body {
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #c0ce06;
   }
   
   .full-width {
@@ -70,6 +69,7 @@ body {
   .yes-no-group {
     padding: 20px;
     font-family: Arial, sans-serif;
+    font-weight: bold;
   }
   
   .yes-no-group label {
@@ -80,19 +80,17 @@ body {
   
   .yes-no-group input[type="radio"] {
     margin: 0 5px 0 15px;
-    transform: scale(1.2); /* Makes the radio buttons slightly bigger */
+    transform: scale(1.2); 
     cursor: pointer;
   }
   
-  /* Textarea style */
   textarea {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    resize: vertical; /* Allows user to stretch it vertically only */
+    resize: vertical; 
   }
-  /* div on the next line */
   .div-break {
     flex-basis: 50%;
 }
