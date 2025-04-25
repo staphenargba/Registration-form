@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Church Membership Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Church Membership Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Application:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+        <label for="name">Applicant name:</label>
+        <input type="text" placeholder="Enter Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Place of birth:</label>
+        <input type="text" id="pob" name="pob" required>
+      </div>
+
+      <div class="yes-no-group">
+        <label>Are you been baptize in water fully?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+     
+      <div class="form-group">
+        <label for="trb">Tribe:</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cob">Country of Origin:</label>
+        <select id="west-africa-country" name="west-africa-country" onchange="toggleLiberiaCounties(this.value)">
+          <option value="">--Select Country--</option>
+          <option value="Benin">Benin</option>
+          <option value="Burkina Faso">Burkina Faso</option>
+          <option value="Cabo Verde">Cabo Verde</option>
+          <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+          <option value="Gambia">Gambia</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Guinea">Guinea</option>
+          <option value="Guinea-Bissau">Guinea-Bissau</option>
+          <option value="Liberia">Liberia</option>
+          <option value="Mali">Mali</option>
+          <option value="Mauritania">Mauritania</option>
+          <option value="Niger">Niger</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Sierra Leone">Sierra Leone</option>
+          <option value="Togo">Togo</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mn">Father's name:</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mn">Mother's name:</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Your present address:</label>
+        <textarea id="address" name="address" rows="1" required></textarea>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="dob">Phone #:</label>
+        <input type="number" required>
+      </div>
+
+
+      <div class="yes-no-group">
+        <label>Have you been born agin according to st John 3:3-18?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+      
+
+      <div class="form-group">
+        <label for="dob">When?</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="yes-no-group">
+        <label>Are you been baptize in water fully?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+
+      <div class="form-group">
+        <label for="mn">Which Church:</label>
+        <input type="text" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="1" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Why did You leave?:</label>
+        <textarea id="address" name="address" rows="1" required></textarea>
+      </div>
+
+      <div class="div-break">
+        <label for="address">Name and address of former church if any:</label>
+        <textarea id="address" name="address" rows="1" required></textarea>
+      </div>
+
+      <div class="yes-no-group">
+        <label>If Accepted, will you faithfully live up to the policies and regulations governing the church?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+      
+      <div class="yes-no-group">
+        <label>Would you be faithful attending service and activities of the church?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+
+      <div class="yes-no-group">
+        <label>Do you promise that you will love, cherish, obey and concerned for members of the church?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+
+      <div class="yes-no-group">
+        <label>Do you faithfully promise to uplift the church during your time of prayer?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+
+
+      <div class="yes-no-group">
+        <label>Why you decided to be a member of Love Center?</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+
+      <div class="yes-no-group">
+        <label>Which department would you desire to be a part of? (Optional)</label><br>
+      
+        <input type="radio" id="yes" name="membership" value="Yes">
+        <label for="yes">Yes</label>
+      
+        <input type="radio" id="no" name="membership" value="No">
+        <label for="no">No</label>
+      </div>
+       
+      <div class="declaration">
+        <p>
+           I the undersigned, declare to the best of my knowledge, in my sound mind and judgement, without any pressure, that the information above is true without any form of deception: therefore, anything stated herein that shall be found to the contrary shall be subject to disciplinary action by the Holy Spirit and the church.
+        </p>
+      </div>
+
+
+  <!--<select id="liberia-county" name="liberia-county"> Please help me out brother, I'm stock!!!
+    <option value="">--Select County--</option>
+    <option value="Bomi">Bomi</option>
+    <option value="Bong">Bong</option>
+    <option value="Gbarpolu">Gbarpolu</option>
+    <option value="Grand Bassa">Grand Bassa</option>
+    <option value="Grand Cape Mount">Grand Cape Mount</option>
+    <option value="Grand Gedeh">Grand Gedeh</option>
+    <option value="Grand Kru">Grand Kru</option>
+    <option value="Lofa">Lofa</option>
+    <option value="Margibi">Margibi</option>
+    <option value="Maryland">Maryland</option>
+    <option value="Montserrado">Montserrado</option>
+    <option value="Nimba">Nimba</option>
+    <option value="River Cess">River Cess</option>
+    <option value="River Gee">River Gee</option>
+    <option value="Sinoe">Sinoe</option>
+  </select> 
+-->
+
+      
+
+      <div class="form-group full-width">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
